@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-custom text-white">
+    <!-- Main container -->
+    <div class="container p-5 px-28 py-10 rounded-3xl bg-slate-200 md:w-[50rem] md:h-[90vh] mt-5 m-auto grid grid-cols-2 grid-rows-3 gap-10">
+
+        <!-- first blue box -->
+
+            <div class="box  bg-blue-300 rounded-2xl md:row-start-1 md:row-end-3 pb-4 shadow-2xl">
+                <div class="lg-blue1 w-100% h-[70%] flex flex-col items-center justify-center mb-4">
+                    <img class="w-[100px] rawalpindi-img" src="" alt="img">
+                    <h1 class="text-[52px] font-bold rawalpindi-temp">00</h1>
+                    <p class="text-[20px]">Rawalpindi</p>
+                </div>
+                <div class="lg-blue2 w-100% h-[30%] flex items-center justify-between text-sm px-3 ">
+                    <div class="first-box-inner flex flex-col items-center gap-2">
+                        <p class="text-[13px] font-bold text-slate-900" >Wind Now</p>
+                        <div> 
+                            <span class="font-bold text-[27px] rawalpindi-wind">00</span>
+                            <span class="text-[15px] text-slate-900" >km</span>
+                        </div>
+                    </div>
+                    <div class="first-box-inner flex flex-col items-center gap-2">
+                        <p class="text-[13px] font-bold text-slate-900" >Humidity</p>
+                        <div> 
+                            <span class="font-bold text-[27px] rawalpindi-humidity">00</span>
+                            <span class="text-[15px] text-slate-900">%</span>
+                        </div>
+                    </div>
+                    <div class="first-box-inner flex flex-col items-center gap-2">
+                        <p class="text-[13px] font-bold text-slate-900" >Wind Degree</p>
+                        <div> 
+                            <span class="font-bold text-[27px] rawalpindi-wind_degree">00</span>
+                            <span class="text-[15px] text-slate-900" >%</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        <!-- Second blue box -->
+
+            <div class="box  bg-blue-300 rounded-2xl shadow-2xl">
+                <div class="flex w-100% h-[100%] items-center justify-between px-5 text-[30px]"> 
+                    <img class="w-16 opacity-20" src="src/arrow.png" alt="">
+                    <h1>My City's <br>Weather</h1>
+                </div>
+            </div>
+
+            <!-- first black box -->
+            <div class="box  bg-slate-700 rounded-2xl shadow-2xl">
+                <div class="flex w-100% h-[100%] items-center justify-between px-5 text-[25px]"> 
+                    <h1>Check Your's <br><input class="w-36 rounded-md px-2 bg-slate-800 search" placeholder="Enter here" type="text"></h1>
+                    <button><img class="w-16 opacity-40 rotate-180 " src="src/arrow.png" alt=""></button>
+                </div>
+            </div>
+
+            <!-- second black box -->
+
+            <div class="box  bg-slate-700 rounded-2xl md:row-start-2 md:row-end-4 pb-4 shadow-2xl black-box">
+                <div class="lg-blue1 w-100% h-[70%] flex flex-col items-center justify-center mb-4">
+                    <img class="w-[100px] img" src="" alt="img">
+                    <h1 class="text-[52px] font-bold temp">00°</h1>
+                    <p class="text-[20px] city-name">Loading</p>
+                </div>
+                <div class="lg-blue2 w-100% h-[30%] flex items-center justify-between text-sm px-3 ">
+                    <div class="first-box-inner flex flex-col items-center gap-2">
+                        <p class="text-[13px] font-bold" >Wind Now</p>
+                        <div> 
+                            <span class="font-bold text-[27px] wind">00</span>
+                            <span class="text-[15px]" >km</span>
+                        </div>
+                    </div>
+                    <div class="first-box-inner flex flex-col items-center gap-2">
+                        <p class="text-[13px] font-bold ">Humidity</p>
+                        <div> 
+                            <span class="font-bold text-[27px] humidity">00</span>
+                            <span class="text-[15px]" >%</span>
+                        </div>
+                    </div>
+                    <div class="first-box-inner flex flex-col items-center gap-2">
+                        <p class="text-[13px] font-bold" >Wind Degree</p>
+                        <div> 
+                            <span class="font-bold text-[27px] wind_degree">00</span>
+                            <span class="text-[15px]" >%</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
